@@ -1,14 +1,16 @@
-# Sentiment Analysis of Cryptocurrency-Related Tweets
+# Sentiment Analysis of Cryptocurrency News Articles
 
-Welcome to the "SentimentAnalysis-CryptoTweets" project. This endeavor is part of the Codecademy Machine Learning Engineer final portfolio, focusing on the application of machine learning techniques to analyze sentiments in cryptocurrency-related tweets.
+Welcome to the "CryptoNewsSentiment" project. This initiative is a part of my ongoing exploration into machine learning, focusing on sentiment analysis of cryptocurrency news articles.
 
 ## Dataset
 
-The dataset for this project, `crypto_tweets_2021_2022.csv`' renamed from 'crypto_10k_tweets_(2021_2022Nov).csv', is a comprehensive collection of tweets about cryptocurrencies from 2021 to 2022. Please download the dataset from the following link: [Download Dataset](<https://www.kaggle.com/datasets/leoth9/crypto-tweets/>).
+The primary dataset for this project is "SahandNZ/cryptonews-articles-with-price-momentum-labels," obtained from Hugging Face Datasets. It consists of news articles gathered from Cryptonews.com and Binance.com, aiming to analyze the impact of news on cryptocurrency prices and market sentiment. The dataset includes articles' text, publication dates, source URLs, and sentiment labels.
+
+More details on the dataset can be found at the repository: [SahandNZ Cryptonews Dataset](https://huggingface.co/datasets/SahandNZ/cryptonews-articles-with-price-momentum-labels)
 
 ## Project Setup
 
-Instructions on setting up this project will be added, including steps for cloning the repository, installing necessary dependencies, and any other required configuration.
+Instructions on setting up this project will be added soon, including steps for cloning the repository, installing necessary dependencies, and any other required configuration.
 
 ## Usage
 
@@ -16,9 +18,9 @@ This section will include guidelines on how to run the project and utilize its f
 
 ## Future Updates
 
-- **Data Analysis:** Insights into the data analysis process will be detailed in this section.
-- **Model Development:** Information about the development and training of the machine learning model will be elaborated here.
-- **Results and Interpretation:** Findings and interpretations from the sentiment analysis will be discussed in this part.
+- **Exploratory Data Analysis (EDA):** Insights into the data analysis process, focusing on understanding the content and sentiment of the news articles.
+- **Model Development:** Details about the development and training of the sentiment analysis model will be elaborated here.
+- **Results and Interpretation:** Findings and interpretations from the sentiment analysis of the news articles will be discussed in this part.
 
 ## Contact
 
@@ -26,4 +28,4 @@ For questions or discussions about this project, please feel free to reach out t
 
 ## Acknowledgements
 
-- Special thanks to Codecademy for providing the framework and guidance for this Machine Learning Engineer portfolio project.
+- Gratitude to the sources of the dataset and the community for providing insights and tools for machine learning and sentiment analysis.
