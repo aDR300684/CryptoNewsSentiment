@@ -23,9 +23,22 @@ Our extensive EDA has yielded valuable insights:
 
 These findings have been crucial in understanding the dataset's nuances and will guide our subsequent model development.
 
+## Feature Engineering
+
+In this phase, we applied feature engineering to the combined dataset, which includes both training and validation sets. Our focus was on enhancing the dataset's ability to represent sentiments in cryptocurrency news articles accurately. We implemented the following steps:
+
+1. **Text Preprocessing and Feature Extraction**:
+   - **Tokenization**: Converted the articles into individual words or tokens for consistency.
+   - **TF-IDF Vectorization**: Transformed text data into numerical format, highlighting word importance.
+   - **Word Embeddings (Word2Vec)**: Employed Word2Vec to capture deeper semantic meanings of words.
+   - **Sentiment-Specific Keywords**: Identified and extracted words associated with positive, neutral, and negative sentiments to enhance our analysis.
+
+2. **N-grams Analysis and Polarity Scores**:
+   - (Details to be added later)
+
 ## Usage
 
-Run the Jupyter Notebook `ML_CryptoNews.ipynb` to follow our EDA steps and view the visualizations and analyses conducted.
+Run the Jupyter Notebook `ML_CryptoNews.ipynb` to follow our EDA steps and view the visualizations, analyses, and feature engineering conducted.
 
 ## Model Development
 
@@ -42,3 +55,6 @@ For questions or discussions about this project, feel free to reach out at [adr8
 ## Acknowledgements
 
 Gratitude to the dataset sources and the machine learning community for their invaluable contributions to the field of sentiment analysis.
+
+
+
