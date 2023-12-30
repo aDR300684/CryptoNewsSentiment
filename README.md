@@ -4,37 +4,30 @@ Welcome to the "CryptoNewsSentiment" project, a deep dive into machine learning 
 
 ## Dataset
 
-This project utilizes the "SahandNZ/cryptonews-articles-with-price-momentum-labels" dataset from Hugging Face Datasets. Comprising articles from Cryptonews.com and Binance.com, it's designed to analyze the impact of news on cryptocurrency prices and market sentiment. The dataset includes article text, publication dates, source URLs, and sentiment labels.
+This project utilizes the "SahandNZ/cryptonews-articles-with-price-momentum-labels" dataset from Hugging Face Datasets. Comprising articles from Cryptonews.com and Binance.com, it's designed to analyze the impact of news on cryptocurrency prices and market sentiment. The dataset includes a range of features which are explored and analyzed in our Jupyter notebook.
 
-Repository: [SahandNZ Cryptonews Dataset](https://huggingface.co/datasets/SahandNZ/cryptonews-articles-with-price-momentum-labels)
+## Jupyter Notebook Progress
 
-## Project Setup
+### Exploratory Data Analysis (EDA)
+- Conducted an extensive EDA to gain deeper insights into our dataset.
+- Key focus areas included sentiment distribution, article length analysis, common words and phrases, and temporal trends in the cryptocurrency news domain.
 
-To set up this project, clone the repository, install the required dependencies (listed in a `requirements.txt` file), and follow the Jupyter Notebook for detailed instructions and code.
+### Feature Engineering
+- Applied comprehensive feature engineering to enhance the dataset's representation of sentiments in cryptocurrency news articles.
+- Steps included text preprocessing, tokenization, TF-IDF vectorization, word embeddings, sentiment-specific keyword extraction, N-grams analysis, and polarity scores using tools like TextBlob or VADER.
 
-## Exploratory Data Analysis (EDA)
+### Upcoming Phases (In Progress)
+- **DateTime Feature Engineering**: Extracting date components from the 'datetime' column.
+- **URL Feature Engineering**: Parsing domain information from the 'url' column.
+- **Re-splitting Dataset**: Post feature engineering, the combined dataset will be re-split into separate training and validation sets.
+- **Feature Scaling and Transformation**: Necessary for models sensitive to data scale.
+- Future steps will involve model selection, implementation, evaluation, and hyperparameter tuning.
 
-Our extensive EDA has yielded valuable insights:
+## Conclusion
+We are currently in the midst of the project, with substantial progress made in data analysis and feature engineering. The upcoming phases will focus on model building and evaluation. This project aims to provide valuable insights into the sentiment of cryptocurrency news articles and their impact on market dynamics. Stay tuned for further updates as we continue to advance in our analysis.
 
-- **Sentiment Distribution**: Analyzed the balance of sentiments across the dataset.
-- **Article Length Analysis**: Investigated article lengths to identify content density and verbosity patterns.
-- **Common Words and Phrases**: Examined frequent topics in the news articles through word cloud visualization and frequency analysis.
-- **Temporal Trends**: Explored how article frequency and sentiment change over time, potentially reflecting market reactions.
+*Note: This README will be updated regularly to reflect the latest developments in the project.*
 
-These findings have been crucial in understanding the dataset's nuances and will guide our subsequent model development.
-
-## Feature Engineering
-
-In this phase, we applied feature engineering to the combined dataset, which includes both training and validation sets. Our focus was on enhancing the dataset's ability to represent sentiments in cryptocurrency news articles accurately. We implemented the following steps:
-
-1. **Text Preprocessing and Feature Extraction**:
-   - **Tokenization**: Converted the articles into individual words or tokens for consistency.
-   - **TF-IDF Vectorization**: Transformed text data into numerical format, highlighting word importance.
-   - **Word Embeddings (Word2Vec)**: Employed Word2Vec to capture deeper semantic meanings of words.
-   - **Sentiment-Specific Keywords**: Identified and extracted words associated with positive, neutral, and negative sentiments to enhance our analysis.
-
-2. **N-grams Analysis and Polarity Scores**:
-   - (Details to be added later)
 
 ## Usage
 
