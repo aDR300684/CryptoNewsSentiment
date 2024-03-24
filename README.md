@@ -8,38 +8,38 @@ The project is organized into several Jupyter notebooks, each dedicated to speci
 
 ## Dataset
 
-Our analysis is based on the "cryptonews-articles-with-price-momentum-labels" dataset from Hugging Face Datasets, comprising articles from prominent cryptocurrency news websites. The dataset includes features like article text, publication date, and price momentum labels, enabling us to assess the impact of news sentiment on cryptocurrency market behavior.
+Our analysis is based on the "cryptonews-articles-with-price-momentum-labels" dataset from Hugging Face Datasets (https://huggingface.co/datasets/SahandNZ/cryptonews-articles-with-price-momentum-labels), comprising articles from prominent cryptocurrency news websites. The dataset includes features like article text, publication date, and price momentum labels, enabling us to assess the impact of news sentiment on cryptocurrency market behavior.
 
 ## Workflow Overview
 
-### Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (`ML_CryptoNews_EDA.ipynb`)
 
 - Initial exploration to understand dataset characteristics.
 - Price momentum distribution analysis and identification of key textual patterns.
 
-### Feature Engineering
+### Feature Engineering (`ML_CryptoNews_FE.ipynb`)
 
 - Text preprocessing and transformation into structured formats using TF-IDF and Word2Vec.
 - Sentiment scoring with FinBERT and aspect-based sentiment analysis to enrich feature set.
 - Topic Modeling with Latent Dirichlet Allocation (LDA), identifying and mapping dominant topics and themes.
   
-### Feature Selection
+### Feature Selection (`ML_CryptoNews_FS.ipynb`)
 
 - Application of various feature selection techniques to refine the dataset, focusing on predictive accuracy for "price_momentums".
 - Utilization of SelectKBest for identifying statistically significant features, and experimentation with feature inclusion and exclusion to optimize the predictive model.
 
-### Model Exploration and Selection
+### Model Exploration and Selection (`ML_CryptoNews_Models.ipynb`)
 
 - Evaluation of Random Forest, SVM, GBM, and DNN models.
 - GBM model selected based on superior performance on the test set.
 
-### Addressing Overfitting
+### Addressing Overfitting (`ML_CryptoNews_Overfit.ipynb`)
 
 - Implementation of regularization techniques and hyperparameter optimization to enhance model generalization.
 - Utilization of dimensionality reduction techniques, like PCA, to identify the most informative features and minimize overfitting risks.
 - Exploration of model adjustments, including alternative kernels and class weight adjustments, to improve model robustness.
 
-### Pipeline Development
+### Pipeline Development (`ML_CryptoNews_Pipeline.ipynb`)
 
 - Integration of preprocessing, feature engineering, sentiment analysis, and model prediction into a streamlined workflow.
 - The pipeline processes new articles, providing sentiment analysis and price momentum predictions.
@@ -52,7 +52,7 @@ To replicate our analysis or apply the pipeline to new data:
 
 ## Results and Interpretation
 
-The final model within our pipeline demonstrates the capability to predict price momentum from cryptocurrency news with an accuracy of approximately 61%. While showing promise, this accuracy level suggests caution in application for real-world financial decisions. Do not use it at the current state !
+The final model within our pipeline demonstrates the capability to predict price momentum from cryptocurrency news with an accuracy of approximately 61%. While showing promise, this accuracy level suggests caution in application for real-world financial decisions, so do not use it at the current state !
 
 ## Conclusion and Future Work
 
