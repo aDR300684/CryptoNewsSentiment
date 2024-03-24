@@ -1,53 +1,68 @@
-# Sentiment Analysis of Cryptocurrency News Articles
+# Sentiment Analysis on Cryptocurrency News Articles and Price Momentum Prediction: A Machine Learning Workflow
 
-Welcome to the "CryptoNewsSentiment" project, a deep dive into machine learning with a focus on sentiment analysis of cryptocurrency news articles.
+Welcome to the GitHub repository for our project, where we've developed a comprehensive machine learning workflow culminating in the `ML_CryptoNews_Pipeline`. This pipeline is designed for detailed analysis of cryptocurrency news articles to predict price momentum by employing advanced Natural Language Processing (NLP) techniques and sentiment analysis with FinBERT.
+
+## Project Structure
+
+The project is organized into several Jupyter notebooks, each dedicated to specific stages of the machine learning workflow, including Exploratory Data Analysis (EDA), Feature Engineering, Feature Selection, Model Training and Evaluation, Addressing Overfitting and Pipeline Development.
 
 ## Dataset
 
-This project utilizes the "SahandNZ/cryptonews-articles-with-price-momentum-labels" dataset from Hugging Face Datasets. Comprising articles from Cryptonews.com and Binance.com, it's designed to analyze the impact of news on cryptocurrency prices and market sentiment. The dataset includes a range of features which are explored and analyzed in our Jupyter notebook.
+Our analysis is based on the "cryptonews-articles-with-price-momentum-labels" dataset from Hugging Face Datasets, comprising articles from prominent cryptocurrency news websites. The dataset includes features like article text, publication date, and price momentum labels, enabling us to assess the impact of news sentiment on cryptocurrency market behavior.
 
-## Jupyter Notebook Progress
+## Workflow Overview
 
 ### Exploratory Data Analysis (EDA)
-- Conducted an extensive EDA to gain deeper insights into our dataset.
-- Key focus areas included sentiment distribution, article length analysis, common words and phrases, and temporal trends in the cryptocurrency news domain.
+
+- Initial exploration to understand dataset characteristics.
+- Price momentum distribution analysis and identification of key textual patterns.
 
 ### Feature Engineering
-- Applied comprehensive feature engineering to enhance the dataset's representation of sentiments in cryptocurrency news articles.
-- Steps included text preprocessing, tokenization, TF-IDF vectorization, word embeddings, sentiment-specific keyword extraction, N-grams analysis, and polarity scores using tools like TextBlob or VADER.
 
-### Upcoming Phases (In Progress)
-- **DateTime Feature Engineering**: Extracting date components from the 'datetime' column.
-- **URL Feature Engineering**: Parsing domain information from the 'url' column.
-- **Re-splitting Dataset**: Post feature engineering, the combined dataset will be re-split into separate training and validation sets.
-- **Feature Scaling and Transformation**: Necessary for models sensitive to data scale.
-- Future steps will involve model selection, implementation, evaluation, and hyperparameter tuning.
+- Text preprocessing and transformation into structured formats using TF-IDF and Word2Vec.
+- Sentiment scoring with FinBERT and aspect-based sentiment analysis to enrich feature set.
+- Topic Modeling with Latent Dirichlet Allocation (LDA), identifying and mapping dominant topics and themes.
+  
+### Feature Selection
 
-## Conclusion
-We are currently in the midst of the project, with substantial progress made in data analysis and feature engineering. The upcoming phases will focus on model building and evaluation. This project aims to provide valuable insights into the sentiment of cryptocurrency news articles and their impact on market dynamics. Stay tuned for further updates as we continue to advance in our analysis.
+- Application of various feature selection techniques to refine the dataset, focusing on predictive accuracy for "price_momentums".
+- Utilization of SelectKBest for identifying statistically significant features, and experimentation with feature inclusion and exclusion to optimize the predictive model.
 
-*Note: This README will be updated regularly to reflect the latest developments in the project.*
+### Model Exploration and Selection
 
+- Evaluation of Random Forest, SVM, GBM, and DNN models.
+- GBM model selected based on superior performance on the test set.
+
+### Addressing Overfitting
+
+- Implementation of regularization techniques and hyperparameter optimization to enhance model generalization.
+- Utilization of dimensionality reduction techniques, like PCA, to identify the most informative features and minimize overfitting risks.
+- Exploration of model adjustments, including alternative kernels and class weight adjustments, to improve model robustness.
+
+### Pipeline Development
+
+- Integration of preprocessing, feature engineering, sentiment analysis, and model prediction into a streamlined workflow.
+- The pipeline processes new articles, providing sentiment analysis and price momentum predictions.
 
 ## Usage
 
-Run the Jupyter Notebook `ML_CryptoNews.ipynb` to follow our EDA steps and view the visualizations, analyses, and feature engineering conducted.
-
-## Model Development
-
-(Currently in progress) - Details about model building, training, and validation will be elaborated here.
+To replicate our analysis or apply the pipeline to new data:
+1. Run the Jupyter notebooks in sequence, starting with `ML_CryptoNews_EDA.ipynb` through to `ML_CryptoNews_Pipeline.ipynb`.
+2. Ensure all dependencies are installed and data files are located in the specified directories.
 
 ## Results and Interpretation
 
-(To be added) - We will discuss our findings and interpretations from the sentiment analysis of the news articles.
+The final model within our pipeline demonstrates the capability to predict price momentum from cryptocurrency news with an accuracy of approximately 61%. While showing promise, this accuracy level suggests caution in application for real-world financial decisions. Do not use it at the current state !
+
+## Conclusion and Future Work
+
+This project exemplifies a complete machine learning project workflow, from data preprocessing to the development of a predictive pipeline. Future directions include refining the models, exploring additional data sources, and incorporating more sophisticated NLP techniques to enhance predictive accuracy and insights.
 
 ## Contact
 
-For questions or discussions about this project, feel free to reach out at [adr83440@gmail.com](mailto:adr83440@gmail.com).
+For inquiries or discussion about this project, feel free to reach out at [email](mailto:adr83440@gmail.com).
 
 ## Acknowledgements
 
-Gratitude to the dataset sources and the machine learning community for their invaluable contributions to the field of sentiment analysis.
-
-
+Our thanks go to the dataset providers and the broader machine learning community for the resources and support that made this project possible.
 

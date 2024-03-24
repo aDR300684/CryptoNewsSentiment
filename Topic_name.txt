@@ -1,0 +1,19 @@
+Determination of Topic Names
+The names assigned to each topic were derived from analyzing the top representative words identified by the Latent Dirichlet Allocation (LDA) model. These names are intended to capture the essence of the themes or subject matters that are prevalent within each topic, based on the clustering of similar words. Here is how we labeled each topic from 1 to 15, with a brief description of their focus areas:
+
+Topic 1 - Banking and Legal Aspects: Focuses on banks, legal claims, and regulatory statements in the crypto space.
+Topic 2 - Bitcoin Mining: Covers aspects of Bitcoin mining, including miner activity and transaction details.
+Topic 3 - Business and Taxation: Related to business operations, taxation, and public sector involvement in crypto.
+Topic 4 - Investment and Digital Assets: Discusses company investments in digital assets, including asset management and services.
+Topic 5 - Market Dynamics: Captures short-term market movements, including daily price changes and trading volume.
+Topic 6 - Economic Indicators: Concerns with macroeconomic indicators like inflation rates and federal reserve policies.
+Topic 7 - Technical Analysis: Deals with technical analysis indicators like support/resistance levels and price trends.
+Topic 8 - Government and Security: Focuses on government actions, security issues, and regulatory responses to crypto.
+Topic 9 - Market Capitalization and Trading: Involves market cap, trading volumes, and price predictions for cryptocurrencies.
+Topic 10 - Exchanges and Crises: Pertains to crypto exchanges, notable crises like the FTX collapse, and their implications.
+Topic 11 - Market Sentiment: Reflects on overall market sentiment, including bull/bear market indicators and volatility.
+Topic 12 - Price Comparisons: Discusses Bitcoin's price movements in relation to other assets like gold.
+Topic 13 - Token Sales and Funding: Covers topics related to presales, token fundraising, and initial coin offerings (ICOs).
+Topic 14 - Blockchain Technology: Focuses on blockchain technology developments, user engagement, and future prospects.
+Topic 15 - Trading Platforms: Relates to the use of trading platforms, social trading, and decision-making tools for traders.
+This mapping from topics to descriptive labels enhances the interpretability of our dataset, facilitating clearer communication of findings and supporting more nuanced analysis.

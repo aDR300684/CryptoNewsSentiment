@@ -1,0 +1,93 @@
+Training Set Size: 5192 samples
+Number of Features in Training Set: 324 features
+Validation Set Size: 1298 samples
+Number of Features in Validation Set: 324 features
+
+First few rows of the Training Set:
+      Dominant_Topic  finBERT_sentiment_score  Topic_1_Weight  Topic_2_Weight  \
+4587               7                       -1        0.016887        0.016887   
+7860              10                        1        0.017969        0.017969   
+4045              13                        0        0.018396        0.018396   
+6893               2                        0        0.013448        0.532223   
+7537               2                        0        0.019795        0.591306   
+
+      Topic_3_Weight  Topic_4_Weight  Topic_5_Weight  Topic_6_Weight  \
+4587        0.016887        0.016887        0.016887        0.016887   
+7860        0.017969        0.017969        0.017970        0.017969   
+4045        0.018396        0.018396        0.018396        0.018396   
+6893        0.013448        0.195761        0.013448        0.013448   
+7537        0.019796        0.019795        0.019795        0.019795   
+
+      Topic_7_Weight  Topic_8_Weight  ...  word_vector_298  word_vector_299  \
+4587        0.763581        0.016887  ...        -0.152446         0.005267   
+7860        0.017969        0.017969  ...        -0.062934         0.182478   
+4045        0.018396        0.018396  ...        -0.120770         0.194691   
+6893        0.013448        0.067866  ...        -0.081527         0.104306   
+7537        0.019795        0.019795  ...        -0.134633         0.047471   
+
+      word_vector_300  weighted_sentiment_score  positive_sentiment_prop  \
+4587         0.200439                      -1.0                      0.0   
+7860        -0.127649                       1.0                      1.0   
+4045        -0.174961                       0.0                      0.0   
+6893         0.004072                       0.0                      0.0   
+7537        -0.024769                       0.0                      0.0   
+
+      neutral_sentiment_prop  negative_sentiment_prop  \
+4587                     0.0                      1.0   
+7860                     0.0                      0.0   
+4045                     1.0                      0.0   
+6893                     1.0                      0.0   
+7537                     1.0                      0.0   
+
+      positive_sentiment_prop  neutral_sentiment_prop  negative_sentiment_prop  
+4587                      0.0                     0.0                      1.0  
+7860                      1.0                     0.0                      0.0  
+4045                      0.0                     1.0                      0.0  
+6893                      0.0                     1.0                      0.0  
+7537                      0.0                     1.0                      0.0  
+
+[5 rows x 324 columns]
+First few rows of the Validation Set:
+      Dominant_Topic  finBERT_sentiment_score  Topic_1_Weight  Topic_2_Weight  \
+8042              14                        0        0.016175        0.016175   
+6996              11                       -1        0.017778        0.017778   
+4270               2                        0        0.021254        0.702447   
+1599               7                       -1        0.232267        0.024416   
+5674              12                       -1        0.019606        0.019606   
+
+      Topic_3_Weight  Topic_4_Weight  Topic_5_Weight  Topic_6_Weight  \
+8042        0.016175        0.016176        0.343483        0.016175   
+6996        0.017778        0.017778        0.017778        0.017778   
+4270        0.021254        0.021254        0.021254        0.021254   
+1599        0.024416        0.024416        0.024416        0.024416   
+5674        0.019606        0.019606        0.019606        0.019606   
+
+      Topic_7_Weight  Topic_8_Weight  ...  word_vector_298  word_vector_299  \
+8042        0.016175        0.016175  ...        -0.063356         0.166838   
+6996        0.017778        0.017778  ...        -0.149879         0.082232   
+4270        0.021254        0.021254  ...        -0.160464         0.048030   
+1599        0.450319        0.024416  ...        -0.120356         0.071605   
+5674        0.324762        0.019606  ...        -0.113484         0.044660   
+
+      word_vector_300  weighted_sentiment_score  positive_sentiment_prop  \
+8042        -0.044333                       0.0                      0.0   
+6996         0.083689                      -0.8                      0.0   
+4270         0.030075                       0.0                      0.0   
+1599         0.066091                      -1.0                      0.0   
+5674        -0.001971                      -1.0                      0.0   
+
+      neutral_sentiment_prop  negative_sentiment_prop  \
+8042                     1.0                      0.0   
+6996                     0.2                      0.8   
+4270                     1.0                      0.0   
+1599                     0.0                      1.0   
+5674                     0.0                      1.0   
+
+      positive_sentiment_prop  neutral_sentiment_prop  negative_sentiment_prop  
+8042                      0.0                     1.0                      0.0  
+6996                      0.0                     0.2                      0.8  
+4270                      0.0                     1.0                      0.0  
+1599                      0.0                     0.0                      1.0  
+5674                      0.0                     0.0                      1.0  
+
+[5 rows x 324 columns]
